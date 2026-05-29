@@ -616,11 +616,37 @@
     @page landscape-layout {
         size: A4 landscape;
         margin: 1.2cm;
+        @bottom-right {
+            content: "Page " counter(page);
+            font-family: 'Outfit', 'Inter', sans-serif;
+            font-size: 8.5pt;
+            color: #4b5563;
+        }
+        @bottom-left {
+            content: "Navakeralam Reimagined";
+            font-family: 'Outfit', 'Inter', sans-serif;
+            font-size: 8.5pt;
+            color: #4b5563;
+            font-weight: 500;
+        }
     }
     @media print {
         @page {
             size: A4 portrait;
-            margin: 1.5cm;
+            margin: 2cm 1.5cm;
+            @bottom-right {
+                content: "Page " counter(page);
+                font-family: 'Outfit', 'Inter', sans-serif;
+                font-size: 8.5pt;
+                color: #4b5563;
+            }
+            @bottom-left {
+                content: "Navakeralam Reimagined";
+                font-family: 'Outfit', 'Inter', sans-serif;
+                font-size: 8.5pt;
+                color: #4b5563;
+                font-weight: 500;
+            }
         }
         .header-bar, .back-to-top, .scroll-indicator, .cover-bg, .cover-grid {
             display: none !important;
@@ -746,8 +772,7 @@
             border-color: var(--kerala-green) !important;
         }
         .section-footer {
-            margin-top: 30px !important;
-            padding-top: 10px !important;
+            display: none !important;
         }
     }
     
