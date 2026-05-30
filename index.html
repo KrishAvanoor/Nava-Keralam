@@ -760,6 +760,9 @@
         }
         
         /* General layout adjustments for print */
+        a[href]::after {
+            content: none !important;
+        }
         .container, .container-wide {
             width: 100% !important;
             max-width: 100% !important;
@@ -802,15 +805,20 @@
             </div>
             
             <div class="cover-meta">
-                <div class="cover-meta-item">
+                <div class="cover-meta-item" style="max-width: 350px; text-align: center;">
                     <div class="label">Author</div>
-                    <div class="value">An Individual with Hope and Imagination</div>
+                    <div class="value" style="font-size: 14px; line-height: 1.4; font-family: 'Outfit', sans-serif;">
+                        krishavanoor@gmail.com<br>
+                        <span style="font-size: 11px; opacity: 0.8; font-weight: normal; display: block; margin-top: 4px;">An Individual with Hope and Imagination</span>
+                    </div>
                 </div>
-                <div class="cover-meta-item">
-                    <div class="label">Focus</div>
-                    <div class="value">Navakeralam Vision</div>
+                <div class="cover-meta-item" style="max-width: 350px; text-align: center;">
+                    <div class="label">Interactive Version</div>
+                    <div class="value" style="font-size: 13px; line-height: 1.4; font-family: 'Outfit', sans-serif;">
+                        <a href="https://krishavanoor.github.io/Nava-Keralam/" target="_blank" style="color: var(--gold); text-decoration: underline;">krishavanoor.github.io/Nava-Keralam/</a>
+                    </div>
                 </div>
-                <div class="cover-meta-item">
+                <div class="cover-meta-item" style="max-width: 350px; text-align: center;">
                     <div class="label">Status</div>
                     <div class="value">For Discussion</div>
                 </div>
